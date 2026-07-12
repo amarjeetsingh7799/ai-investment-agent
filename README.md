@@ -89,4 +89,4 @@ npm run dev
 3. **Database Integration:** Fully wire up the MongoDB instance to allow users to compare their historical `INVEST` ratings against real market performance 6 months later.
 
 ---
-*Built with ❤️ and AI.*
+*Built with ❤️
