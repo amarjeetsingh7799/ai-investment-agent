@@ -1,0 +1,20 @@
+services:
+  # Backend API
+  - type: web
+    name: ai-investment-agent-api
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_VERSION
+        value: 18.16.0
+
+  # Frontend Web App
+  - type: web
+    name: ai-investment-agent-web
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: client/dist
+    envVars:
+      - key: NODE_VERSION
+        value: 18.16.0
